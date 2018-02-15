@@ -50,8 +50,8 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     func getFilePath(fileName: String) -> URL {
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0]
-        let pathArray = "\(dirPath + "/" + fileName)"
-        let filePath = URL(fileURLWithPath: pathArray)
+        let path = "\(dirPath + "/" + fileName)"
+        let filePath = URL(fileURLWithPath: path)
         return filePath
     }
     
